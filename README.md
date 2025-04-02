@@ -24,17 +24,17 @@ Both the server and client are configured to start with a high debug level to pr
 
 ## About This Exercise
 
-The goal is to enhance the code to support the extended key update functionality described in [this draft specification](https://hannestschofenig.github.io/tls-key-update/draft-tschofenig-tls-extended-key-update.html).
+The goal is to enhance or improve the key agreement in TLS. the code to support the extended key update functionality described in 
 
-You don't need to implement everything in the specification. Choose something that makes sense to you. Examples include:
+Choose something that makes sense to you. Examples include:
 
-- Adding Diffie-Hellman to the post-handshake Key Update (which is described in the not-yet-published draft above)
-- Including the negotiation of Post-quantum cryptographic algorithms in the initial handshake, as described in [this draft](https://www.ietf.org/archive/id/draft-connolly-tls-mlkem-key-agreement-01.html)
+- Adding Diffie-Hellman to the post-handshake key kpdate, which is described in [this draft specification](https://hannestschofenig.github.io/tls-key-update/draft-tschofenig-tls-extended-key-update.html).
+- Including the negotiation of post-quantum cryptographic algorithms in the initial handshake, as described in [this draft](https://datatracker.ietf.org/doc/draft-connolly-tls-mlkem-key-agreement/)
 - Including the Hybrid algorithm in the initial handshake, as described in [this draft](https://datatracker.ietf.org/doc/html/draft-ietf-tls-hybrid-design)
-- Using PQC in the post-handshake key update
+- Using PQC in the post-handshake key update (as described in  [this draft specification](https://hannestschofenig.github.io/tls-key-update/draft-tschofenig-tls-extended-key-update.html))
 - Negotiating the extension, as described in [this draft](https://datatracker.ietf.org/doc/draft-ietf-tls-tlsflags/)
 
-Note: The current code in the repo does not enable the application traffic secrets - it currently only computes them. 
+(Note: The current code in the repo does not enable the application traffic secrets - it currently only computes them.)
 
 ## Key Files
 
